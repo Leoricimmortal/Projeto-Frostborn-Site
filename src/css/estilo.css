@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkslategrey;
+}
+
+h1{
+    margin: 1%;
+    padding: 1%;
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    background-color:rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+}
+h2{
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 40px;
+    border-radius: 20px;
+}
+
+p{
+    padding: 2rem;
+    color: rgb(244, 244, 245);
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+
+    
+    
+}
+header{
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.conteudoprincipal {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.conteudoprincipal img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative; /* mantém a imagem na "base" */
+  z-index: 1;
+}
+
+.descricaoprincipal {
+  position: absolute;
+  bottom: -300Px;
+  left: 30%;
+  transform: translateX(-21%);
+  z-index: 2; /* coloca o texto acima da imagem */
+
+  color: white;
+  font-size: 40px;
+  font-family: "League Spartan", sans-serif;
+
+  background-color: rgba(24, 23, 22, 0.5);
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+  
+
+
+    .botoes {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 16px;
+      background-color: transparent; /* remove fundo branco */
+      border: none;
+      z-index: 2;
+    }
+
+    .botoes .botao.selecionado {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px #d9d9d9;
+      }
+      
+      .botoes .botao, .botaoberserk {
+        box-shadow: 0 0 10px #f12207;
+      }
+      
+      .botoes .botaoespancador {
+        box-shadow: 0 0 10px #06e6db;
+      }
+      
+      .botoes .botaoilusionista {
+        box-shadow: 0 0 10px #0614df;
+      }
+      
+      .botoes .botaoassassino {
+        box-shadow: 0 0 10px #e4309a;
+      }
+      
+      .botoes .botaodesbravador{
+        box-shadow: 0 0 10px #ff8902;
+      }
+        
+      .botoes .botaocurandeiro{
+        box-shadow: 0 0 10px #02ff24;
+      }
+      .botoes .botaodruida{
+        box-shadow: 0 0 10px #e203ff;
+      }
+
+        ul,li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+      
+    
+      .botoes button {
+          background: transparent;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          outline: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .botoes button img {
+          display: block;
+          background-color: transparent;
+          border-radius: 50%; /* opcional: deixa o ícone redondinho */
+          width: 90px; /* ajuste se necessário */
+          height: 90px; /* ajuste se necessário */
+      }
+        
+      .botoes button {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .botoes button {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .botoes button img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+      }
+
+      .classe {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        padding: 1.5rem;
+        flex-wrap: wrap; /* para não quebrar em telas pequenas */
+      }
+      
+      .classe picture img {
+        width: 500px;
+        height: auto;
+        border-radius: 12px;
+      }
+      
+      .classe .conteudo {
+        flex: 1;
+        min-width: 250px;
+      }
